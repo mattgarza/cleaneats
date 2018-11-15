@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Clean Eats</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+        @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+	</style>
+
+    <script src="https://js.arcgis.com/4.9"></script>
+
+
+</head>
+
+    <body>
+        <!-- Header & nav bar w/ responsive design for mobile -->
+        <div class="header">
+            <h1 class="script"><span>Clean Eats</span></h1>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://data.austintexas.gov/Health-and-Community-Services/Food-Establishment-Inspection-Scores/ecmv-9xxi/data">Data</a>     <!-- City of Austin food score data table -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"> </i>
+            </a>
+        </div>
+
+        <!-- End header/begin side navbar html below -->
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Things</a>                   <!-- Still -->
+            <a href="#">Our Service</a>              <!-- Needs -->
+            <a href="#">Can</a>                      <!-- links -->
+            <a href="#">Offer</a>                    <!-- Here too -->
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Tools</span>
+
+				<!--The Map display-->
+
+        <div id="theMap"> </div>
+
+
+				<!-- Footer -->
+				<footer class="footerDiv">
+						<h3>Copyright 2018</h3>
+					 	<h3>Clean Eats</h3>
+					 	<h3>All rights reserved</h3>
+					 	<h3 id="time"></h3>
+				</div>
+
+
+    	<script src="external.js" async defer></script>
+    </body>
+
+</html>
